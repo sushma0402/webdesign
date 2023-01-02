@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASE</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Roboto&family=Rubik:wght@400;500;600;700&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* GENERAL STYLES */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: #051d40;
+        line-height: 1.7;
+      }
+
+      /* NAVBAR */
+
+      .navbar {
+        /* background-color: #051d40 !important; */
+        padding: 15px 20px;
+      }
+
+      .logo {
+        height: 70px;
+        margin-bottom: 5px;
+      }
+
+      .nav-link {
+        margin-left: 30px;
+      }
+
+      .nav-link:hover {
+        transform: scale(1.1);
+      }
+
+      /* CONTENT */
+
+      
+      .article{
+        margin: 120px 30px;
+      }
+
+      .content{
+        max-width: 750px;
+        margin: 0 auto;
+      }
+
+      h1{
+        font-weight: 700;
+        margin-bottom: 30px;
+        font-size: 44px;
+      }
+
+      h2{
+        margin-top: 50px;
+      }
+      
+      p,ul,ol{
+        margin-top: 20px;
+      }
+
+      /* FOOTER SECTION */
+
+      footer {
+        padding: 50px 150px 100px 150px;
+        background-color: #051d40;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 80px;
+      }
+
+      .contact {
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .contact,
+      .footer-link:link,
+      .footer-link:visited {
+        text-decoration: none;
+        color: #cdd2d9;
+      }
+
+      .footer-link:hover,
+      .footer-link:active {
+        color: #fff;
+      }
+
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        margin-top: 15px;
+      }
+
+      .contact-details a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .service-img {
+          width: 60%;
+        }
+
+        .logo {
+          height: 50px;
+        }
+
+        footer {
+          padding: 50px 30px;
+
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="img/logo-light.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#ranknotch-navbar"
+          aria-controls="ranknotch-navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ranknotch-navbar">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link"  href="index.html">Home</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link active" aria-current="page"" href="blog.html">Blog</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="article">
+      <div class="content">
+      <h1>Secure Access Service Edge</h1>
+      <p>As stated in Gartner's August 2019 study, "The Future of Network Security in Cloud." SASE is a network framework that combines WAN with security services such as FWaaS (Firewall as a Service), ZTNA (Zero Trust Network Access), CASB (Cloud Access Security Broker), and SWG (Secure Web Gateway) into a single cloud service. SASE is centrally governed, guaranteeing uniform policies throughout the ecosystem. This strategy enables enterprises to grant secure access to all users, regardless of where they are located. Gartner predicts that, “by 2024, at least 40% of enterprises will have explicit strategies to adopt SASE, up from less than 1% at year-end 2018.”</p>
+      <h2>Why do we need SASE?</h2>
+          <p>Most businesses are switching to the cloud, and remote work is on the rise. The security offered by current technologies is less effective now because of a change in workplace culture. User traffic is forwarded to the data center in the legacy model so that malware and other types of risks can be examined. This strategy works best when the users are in the workplace, but it is not recommended when the user is stationed elsewhere because it lowers productivity. Instead of sending the traffic to the data center, SASE routes it to a nearby location for inspection. Because of this, it is a preferable solution for safeguarding distributed workforces.</p>
+            
+            
+            
+            <h2>Benefits of SASE</h2>
+              <ol>
+                <li>Flexibility: The flexibility provided by SASE allows for the implementation of many security services, including threat prevention, DNS security, and NGFW rules.</li>
+                <li>Decrease in complexity: The security team just needs to manage one product instead of numerous products because SASE implements various security services through a single product, which minimizes complexity.</li>
+                <li>Zero Trust: provides zero trust by eliminating any trust presumptions when users and applications connect.</li>
+                <li>Reduced costs: Utilizing a single product rather than several point products reduces costs for the company.</li>
+                <li>Prevents threats: Because of its improved features, it offers better network security and visibility.</li>
+              </ol>
+              
+         <h2>Components of SASE:</h2>   
+         <ol>
+          <li>Secure Web Gateway: Secure web gateway stops malware and malicious web traffic from entering the company's internal network and also enforces company's policies.</li>
+            <li>Cloud Access Security Broker: Software that is hosted in the cloud or on-premises hardware that serves as a middleman between customers and cloud service providers are referred to as cloud access security brokers, or CASBs.</li>
+              <li>Firewall as a Service: FWaaS is a cloud-based firewall solution that offers easy-to-scale next-generation firewall features like web filtering, DNS security, and intrusion prevention systems.</li>
+         <li>Zero Trust Network Access: Based on well-defined access control regulations, Zero Trust Network Access (ZTNA) offers safe remote access to an organization's applications, data, and services.</li>
+            </ol>
+       
+        </div>
+      </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <a class="footer-link" href="services.html">Our Services</a>
+      <a class="footer-link" href="blog.html">Blog</a>
+      <div>
+        <p class="contact" href="">Contact us</p>
+        <div class="contact-details">
+          <a class="footer-link" href="mailto:director@ranknotch.com"
+            >For enquiry- director@ranknotch.com</a
+          ><a class="footer-link" href="mailto:sales@ranknotch.com"
+            >For sales- sales@ranknotch.com</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </body>
+</html>
